@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고정위치</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(244, 244, 103);
+      }
+
+      aside {
+        position: fixed;
+        width: 100px;
+        height: 500px;
+        background-color: bisque;
+        top: 20%;
+        right: 3%;
+      }
+
+      main {
+        padding-top: 100px;
+        /* position fixed는 다른요소와 겹치는 속성이 있기 때문에
+        padding을 주어 컨텐츠를 fixed요소 크기만큼 이동시킨다 */
+        height: 200vh;
+      }
+
+      #modal-background {
+        position: fixed;
+        /* rgba를 이용하면 배경색상만 투명해짐 */
+        background-color: rgba(0, 0, 0, 0.7);
+        /* opacity: 0.5; 를 사용하면 전체 투명해짐*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        /* 기본값은 0 숫자가 높을수록 겹치는 요소와 비교해 
+        해당 요소의 위치가 위로 올라온다*/
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="modal-background">안녕하세요</div>
+    <header></header>
+    <aside></aside>
+    <main>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet
+      fugiat excepturi numquam eligendi accusantium nobis velit modi asperiores.
+      Fuga, facilis. Quis adipisci tempora ducimus magni facere iure incidunt
+      voluptates.
+    </main>
+  </body>
+</html>

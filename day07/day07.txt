@@ -1,0 +1,34 @@
+full screen
+
+-----------------------------------------
+
+animation
+
+-----------------------------------------
+
+gradient
+    그라데이션
+
+    background: linear-gradient(방향, 색상1, 색상2...)
+    background: radial-gradient(ellipse at 시작위치, 색상1, 색상2...)
+
+    ellipse(타원형), circle(원형)
+    기본값은 ellipse
+    at 시작위치(center, left, right)
+
+-------------------------------------------------
+
+css 끝
+
+git, github
+hosting, serverless --2일
+
+js, ts --1일
+
+-----------------------------------------------
+
+과제
+1. 호스팅하고싶은 페이지 하나 만들기(index.html)
+
+--------------------------------------------------
+

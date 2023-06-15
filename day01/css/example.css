@@ -1,0 +1,22 @@
+p > a {
+  color: red;
+}
+
+/* 우선순위가 더 높음 */
+header > p > a {
+  color: black;
+}
+
+/* header */
+header > .nav > p {
+  color: aliceblue;
+}
+
+header > .nav > #content {
+  color: aqua;
+}
+
+/* contatiner */
+#contatiner > div {
+  width: 300px;
+}

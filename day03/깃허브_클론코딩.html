@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "mona";
+        src: ("./font/Mona Sans/OTF/Mona-Sans-Bold.otf") format("opentype");
+      }
+
+      * {
+        font-family: "mona";
+      }
+
+      div.left {
+        float: left;
+        background: #fefbfd;
+        padding: 27px;
+      }
+
+      .newRepository {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .button {
+        padding: 5px;
+        font-size: 15px;
+        color: aliceblue;
+        background-color: rgb(97, 197, 97);
+        border-radius: 5px;
+        border: none;
+      }
+
+      #search {
+        border: rgb(186, 186, 186);
+        border-style: solid;
+        border-width: 1px;
+        background: #f1eeef;
+        padding: 7px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      #name {
+        display: flex;
+        padding: 10px;
+      }
+
+      #nickNameIcon {
+        border-radius: 60%;
+      }
+
+      #nickName:hover {
+        color: darkviolet;
+      }
+
+      #activity {
+        padding: 3px;
+        margin: 5px;
+      }
+
+      .explanation {
+        border: dashed #c6bbbb;
+        height: 70px;
+        width: 290px;
+        border-radius: 10px;
+      }
+
+      #block {
+        margin: 18px;
+        font-size: 12px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <div>아이콘</div>
+      <div>검색창</div>
+      <div>풀리퀘스트...</div>
+      <div></div>
+      <div>오른쪽 짜바리</div>
+    </header> -->
+    <main>
+      <div class="left">
+        <div class="newRepository">
+          <span class="repository">Top Repositories</span>
+          <span class="click"
+            ><button
+              class="button"
+              type="button"
+              onclick="location.href= 'https://github.com/new'"
+            >
+              <img
+                src="img/free-icon-github-sign-25657.png"
+                width="15px"
+                height="15px"
+              />
+              New
+            </button></span
+          >
+        </div>
+        <input
+          id="search"
+          size="37"
+          type="text"
+          placeholder="Find a repository..."
+        />
+        <div
+          id="name"
+          onclick="location.href= 'https://github.com/kimjin9822/-'"
+        >
+          <img
+            id="nickNameIcon"
+            src="img\94292515.png"
+            width="20px"
+            height="20px"
+          />
+          <a id="nickName" href="https://github.com/">nickName</a>
+        </div>
+        <div id="activity">Recent activity</div>
+        <div class="explanation">
+          <p id="block">
+            When you take actions across GitHub, we’ll provide links to that
+            activity here.
+          </p>
+        </div>
+      </div>
+      <!-- <div class="right">
+        <div>수행원...</div>
+        <div>개인뉴스...</div>
+        <div>유용한 팁</div>
+        <div>라이센스?</div>
+        <div>블로그...</div>
+        <div>
+          <div>최신 변경사항</div>
+          <div>어제</div>
+          <div>...</div>
+          <div>...</div>
+          <div>...</div>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>id/class 선택자</title>
+    <style>
+      /* . = 클래스, # = 아이디 */
+      * {
+        color: black;
+      }
+
+      .small-font {
+        font-size: 12px;
+      }
+
+      .big-font {
+        font-size: 23px;
+      }
+
+      .red-text {
+        color: red;
+      }
+
+      #red-text {
+        color: red;
+      }
+
+      .font-bold {
+        font-weight: bold;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      HEADER
+    </head>
+    <main>
+      <h2>ID/CLASS 선택자</h2>
+      <p class="small-font">
+        Lorem ipsum dolor sit
+        <span id="red-text" class="big-font font-bold">amet consectetur</span>
+        adipisicing elit. Minima porro perspiciatis
+        <span class="red-text">est voluptas aliquam id</span> tempore vero minus
+        distinctio odit sunt, laboriosam eaque soluta nemo, provident eligendi
+        aperiam libero nam.
+      </p>
+      <p class="big-font">
+        Lorem ipsum dolor
+        <span class="small-font">sit amet consectetur adipisicing</span> elit.
+        Tempora aut illum harum voluptatibus iusto! Libero quos deleniti culpa
+        fugiat, ut perferendis reprehenderit laudantium quae dolorum,
+        <span class="red-text font-bold">at, quidem eum numquam</span> quas.
+      </p>
+    </main>
+    <footer>FOOTER</footer>
+  </body>
+</html>
+
+<!--
+    <ul class="header-menu-list"> (o)
+    </ul>
+
+    <ul class="box1"> (x)
+    </ul>
+
+    id랑 class를 지어줄 때는
+    해당 구역이 어떤 역할을 하고 있는지 가독성 있도록 역할에 올바르게 이름을 지어주어야한다
+-->

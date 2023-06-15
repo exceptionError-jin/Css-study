@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* header */
+      .top {
+        background-color: rgb(31, 31, 31);
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+      }
+      /**ㄱㄱㄱ*/
+      #search-in-top {
+        border: 1px solid rgb(112, 110, 110);
+        border-radius: 6px;
+        height: 30px;
+        width: 270px;
+        background-color: rgb(31, 31, 31);
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      #mainImg {
+        margin-top: -5px;
+        width: 42px;
+        height: 42px;
+      }
+
+      ul > li {
+        list-style: none;
+      }
+
+      ul > li > a {
+        color: white;
+      }
+
+      ul {
+        display: flex;
+        padding: 15px;
+      }
+
+      ul > li > a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-size: 13px;
+      }
+
+      ul > li > a:hover {
+        color: rgba(117, 113, 113, 0.741);
+      }
+      #right-top {
+        color: white;
+        margin: 15px;
+      }
+
+      /* 중간 */
+      div.left {
+        float: left;
+        background: #fefbfd;
+        padding: 27px;
+      }
+
+      .newRepository {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .button {
+        padding: 5px;
+        font-size: 15px;
+        color: aliceblue;
+        background-color: rgb(97, 197, 97);
+        border-radius: 5px;
+        border: none;
+      }
+
+      #search {
+        border: rgb(186, 186, 186);
+        border-style: solid;
+        border-width: 1px;
+        background: #f1eeef;
+        padding: 7px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      #name {
+        display: flex;
+        padding: 10px;
+      }
+      #nickName {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      #nickNameIcon {
+        border-radius: 60%;
+      }
+
+      #nickName:hover {
+        color: rgb(0, 0, 0);
+        text-decoration: underline 1px solid;
+      }
+
+      #activity {
+        padding: 3px;
+        margin: 5px;
+      }
+
+      .explanation {
+        border: dashed #c6bbbb;
+        height: 70px;
+        width: 290px;
+        border-radius: 10px;
+        border-width: 1px;
+      }
+
+      #block {
+        margin: 18px;
+        font-size: 12px;
+        text-align: left;
+      }
+
+      /* main */
+      .mainCut {
+        float: left;
+        background: #ffffff;
+        padding: 27px;
+      }
+
+      .following {
+        display: flex;
+        margin-bottom: 20px;
+        box-shadow: inset 0 -1px #c6bbbb;
+        background-color: #ffffff;
+        padding: 10px;
+      }
+
+      .main {
+        border: solid #c6bbbb 1px;
+        height: 220px;
+        width: 680px;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      div > p > a:hover {
+        text-decoration: underline blue;
+      }
+
+      .mainBtn {
+        background-color: initial;
+        border: 0;
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .mainBtn:hover {
+        background-color: #edecec;
+        border: #eae8e8;
+        border-radius: 10px;
+      }
+
+      .exploreBtn:hover {
+        background-color: rgb(78, 78, 234);
+        color: #ffffff;
+      }
+
+      .exploreBtn {
+        color: rgb(40, 40, 255);
+        padding: 5px 16px;
+        font-size: 14px;
+        line-height: 20px;
+        border: none;
+        border-radius: 6px;
+      }
+
+      .right {
+        list-style: none;
+        display: inline;
+      }
+
+      .latest {
+        padding: 20px;
+      }
+
+      .p {
+        margin-left: 10px;
+        margin-top: -20px;
+        font-size: 13px;
+      }
+
+      .li {
+        margin-right: 30px;
+        padding: 3px;
+        font-size: 14px;
+      }
+
+      .divClass {
+        margin-bottom: 10px;
+      }
+
+      .time {
+        color: #717171;
+        font-size: 13px;
+      }
+
+      .li:hover {
+        color: blue;
+        text-decoration: underline blue;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub</title>
+  </head>
+  <body>
+    <header>
+      <label class="top">
+        <ul id="left-toptopbar">
+          <li>
+            <a href="www.github.com"
+              ><img
+                src="https://raw.githubusercontent.com/HeropCode/GitHub-Responsive/ceaea70ea4528ffd42f9711c61b06d1f66344d60/img/logo.svg"
+                id="mainImg"
+            /></a>
+          </li>
+          <li>
+            <input
+              type="search"
+              id="search-in-top"
+              placeholder="   Search or jump to ..."
+            />
+          </li>
+          <li>
+            <a href=""><strong>Pull request</strong></a>
+          </li>
+          <li>
+            <a href=""><strong>CodeSpaces</strong></a>
+          </li>
+          <li>
+            <a href=""><strong>Issues</strong></a>
+          </li>
+          <li>
+            <a href=""><strong>Marketplace</strong></a>
+          </li>
+          <li>
+            <a href=""><strong>Explore</strong></a>
+          </li>
+        </ul>
+        <div id="right-top">img img img</div>
+      </label>
+    </header>
+    <div class="left">
+      <div class="newRepository">
+        <span class="repository">Top Repositories</span>
+        <span class="click"
+          ><button
+            class="button"
+            type="button"
+            onclick="location.href='https://github.com/new'"
+          >
+            <img
+              src="https://raw.githubusercontent.com/HeropCode/GitHub-Responsive/ceaea70ea4528ffd42f9711c61b06d1f66344d60/img/logo.svg"
+              width="15px"
+              height="15px"
+            />
+            New
+          </button></span
+        >
+      </div>
+      <input
+        id="search"
+        size="37"
+        type="text"
+        placeholder="Find a repository..."
+      />
+      <div id="name" onclick="location.href= 'https: //github.com/';">
+        <a id="nickName" href="https://github.com/">nickName</a>
+      </div>
+      <div id="activity">Recent activity</div>
+      <div class="explanation">
+        <p id="block">
+          When you take actions across GitHub, we’ll provide links to that
+          activity here.
+        </p>
+      </div>
+    </div>
+    <main>
+      <div class="mainCut">
+        <ul class="following">
+          <li>
+            <button
+              type="button"
+              class="mainBtn"
+              onclick="location.href='https://github.com/new'"
+            >
+              following
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="mainBtn"
+              onclick="location.href='https://github.com/new'"
+            >
+              for you(beta)
+            </button>
+          </li>
+        </ul>
+        <div class="main">
+          <h2 id="mainblock">
+            Discover interesting projects and people to populate your personal
+            news feed.
+          </h2>
+          <br />
+          <p>
+            Your news feed helps you keep up with recent activity on
+            repositories you <a href="https://github.com/trending">watch</a> or
+            <a href="https://github.com/kimjin9822?tab=stars">star</a> and
+            people you
+            <a href="https://github.com/trending/developers">follow</a>.
+          </p>
+          <br />
+          <button
+            class="exploreBtn"
+            id="ExploreButton"
+            type="button"
+            onclick="location.href='https://github.com/explore';"
+          >
+            Explore GitHub
+          </button>
+        </div>
+        <div>
+          <img src="" />
+          <p class="p">
+            <strong>ProTip!</strong> The feed shows you events from people you
+            <a href="https://github.com/trending/developers">follow</a> and
+            repositories you <a href="https://github.com/trending">watch</a> or
+            <a href="https://github.com/kimjin9822?tab=stars">star</a> .
+          </p>
+        </div>
+        <div>
+          <img />
+          <p class="p">Subscribe to your news feed</p>
+        </div>
+      </div>
+      <aside>
+        <ul class="right">
+          <div class="divClass latest">Latest changes</div>
+          <div class="divClass">
+            <div class="time">4 hours ago</div>
+            <li class="li">
+              Dependency submission suggestions on Gradle, Maven, Scala and Mill
+              repositories
+            </li>
+          </div>
+          <div class="divClass">
+            <div class="time">8 hours ago</div>
+            <li class="li">
+              Manage branch protection rules with a new permission
+            </li>
+          </div>
+          <div class="divClass">
+            <div class="time">9 hours ago</div>
+            <li class="li">Pull request merge queue (public beta)</li>
+          </div>
+          <div class="divClass">
+            <div class="time">10 hours ago</div>
+            <li class="li">Sunset Notice – Team Discussions</li>
+          </div>
+          <div class="divClass">
+            <div class="li">View changelog →</div>
+          </div>
+        </ul>
+      </aside>
+    </main>
+  </body>
+</html>

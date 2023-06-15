@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_텍스트4</title>
+    <style>
+      .content {
+        border: 3px dashed #f00;
+        width: 600px;
+        padding: 10px;
+        white-space: nowrap;
+        /* default : wrap */
+        /* pre, 사용자가 입력한 불바꿈이나 띄어쓰기를 그대로 반영 */
+        /* white-space: nowrap; , overflow: hidden; 이 성립해야 text-overflow가능*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TEXT-OVERFLOW</h2>
+    <p class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum ab
+      incidunt quam molestias, sint repellat debitis doloribus? Sit corrupti
+      iusto perferendis ex labore nobis sequi maiores cum, sed porro. Lorem
+      ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati velit
+      debitis totam, alias nobis aspernatur mollitia. Fugit odio maiores
+      deserunt nihil esse accusamus incidunt aut, qui inventore ipsa
+      exercitationem aliquid.
+    </p>
+  </body>
+</html>

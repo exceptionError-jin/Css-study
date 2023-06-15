@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디스플레이_2</title>
+    <style>
+      div {
+        background-color: #333;
+        color: #fff;
+        margin: 16px;
+      }
+
+      .display {
+        /* 화면에서 사라짐 */
+        display: none;
+      }
+
+      .visibility {
+        /* 클릭 불가능 */
+        visibility: hidden;
+      }
+
+      .opacity {
+        /* 투명도 0, 클릭 가능*/
+        opacity: 0;
+      }
+
+      /* 
+      display none
+      영역 사라짐 클릭안됨
+
+      visibility: hidden;
+      영역있음 클릭안됨
+
+      opacity: 0;
+      영역있음 클릭됨
+
+      **주의
+      opacity는 안에있는 내용물(컨텐츠)도 투명하게
+      만들기 때문에 배경색을 투명하게 만들 때에는 
+      opacity가 아니라 rgba를 쓰는게 좋다
+      */
+
+      button {
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: aqua;
+        opacity: 0.7;
+      }
+
+      button:disabled {
+        background-color: #333;
+        counter-reset: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>display :none 화면에서 사라짐</p>
+      <p class="display">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint,
+        facere totam culpa accusamus perspiciatis, facilis similique incidunt
+        dolore doloremque ullam debitis asperiores ipsa! Nemo eum ullam maxime
+        in ipsam!
+      </p>
+    </div>
+    <div>
+      <p>visibility:hidden 화면에서 사라짐</p>
+      <p class="visibility">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint,
+        facere totam culpa accusamus perspiciatis, facilis similique incidunt
+        dolore doloremque ullam debitis asperiores ipsa! Nemo eum ullam maxime
+        in ipsam!
+      </p>
+    </div>
+    <div>
+      <p>opacity: 0 화면에서 사라짐</p>
+      <p class="opacity">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint,
+        facere totam culpa accusamus perspiciatis, facilis similique incidunt
+        dolore doloremque ullam debitis asperiores ipsa! Nemo eum ullam maxime
+        in ipsam!
+      </p>
+    </div>
+
+    <button disabled>로그인</button>
+  </body>
+</html>

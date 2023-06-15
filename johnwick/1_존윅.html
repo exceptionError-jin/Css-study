@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>존윅</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(
+            to left,
+            rgba(20, 20, 20, 0.2) 30%,
+            rgba(20, 20, 20, 0.75) 70%,
+            rgba(20, 20, 20, 1) 100%
+          ),
+          url("img/jw1.jpeg");
+        background-size: cover;
+
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      header {
+        margin: 10px;
+        margin-top: 20px;
+      }
+
+      main {
+        margin-top: 80px;
+        margin-left: 100px;
+        display: flex;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .headerimg {
+        margin: 10px;
+        margin-right: 20px;
+      }
+
+      .headerDiv {
+        display: flex;
+      }
+
+      .headername {
+        padding: 10px;
+        font-size: 1.4rem;
+      }
+
+      .home {
+        color: red;
+      }
+
+      .headername:hover {
+        color: red;
+      }
+
+      .logo {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .titlelogo {
+        margin-bottom: 20px;
+        width: 40%;
+        height: 20%;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 40px;
+      }
+
+      div {
+        color: white;
+        font-weight: 100;
+      }
+
+      .ul {
+        display: flex;
+        padding-left: 0;
+      }
+
+      .btn {
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        padding-right: 50px;
+      }
+
+      strong {
+        padding-right: 30px;
+      }
+
+      .button {
+        color: white;
+
+        width: 140px;
+        height: 40px;
+        margin-top: 50px;
+        margin-right: 10px;
+        border-radius: 2rem;
+        border: 1px solid white;
+        background-color: transparent;
+      }
+
+      .right {
+        display: flex;
+        position: fixed;
+        top: 50%;
+        left: 90%;
+        transform: translate(150%, 50%);
+      }
+
+      .img270 {
+        font-weight: 500;
+        width: 30px;
+        height: 60px;
+        background-color: transparent;
+        transform: rotate(270deg);
+      }
+
+      .move_to_left {
+        animation: animation_move 1.2s infinite ease-in-out alternate;
+      }
+
+      @keyframes animation_move {
+        0% {
+          transform: translateX(0px) translateY(0px) scale(1);
+        }
+
+        100% {
+          transform: translateX(-20px) translateY(0px) scale(1);
+        }
+      }
+
+      footer {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        margin-left: 50px;
+      }
+
+      .footerlogo {
+        margin: 30px;
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="headerDiv">
+          <div>
+            <img class="logo" src="/johnwick/img/johnwicklogo.png" />
+          </div>
+          <div class="headername home">HOME</div>
+          <div class="headername">CHARACTER</div>
+          <div class="headername">GALLERY</div>
+        </div>
+
+        <div>
+          <img
+            class="headerimg"
+            src="/johnwick/img/KakaoTalk_20230216_121812613_01.png"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div>
+          <img class="titlelogo" src="/johnwick/img/johnwicktitle.png" alt="" />
+        </div>
+        <div><h1>CHAPTER1 - JOHN WICK</h1></div>
+        <div>
+          <p>
+            I shouldn't have touched him. Revenge against enemies who chose the
+            wrong person!John Wick, a killer<br />
+            called a legend, retires from the world of crime by meeting his
+            beloved woman and getting married.<br />
+            Happiness is also briefly delivered as a gift to his wife before she
+            dies. Then one day, unidentified men rush<br />
+            into his house...
+          </p>
+
+          <ul class="ul">
+            <li><strong>Release</strong>2015, January 21</li>
+            <li><strong>Director</strong>Chad Stahelski</li>
+            <li><strong>Genre</strong>Action, Thriller</li>
+          </ul>
+        </div>
+
+        <div class="btn">
+          <div><button class="button" type="button">WATCH</button></div>
+          <div><button class="button" type="button">READ MORE</button></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="img270">TRAILER</div>
+        <div>
+          <img
+            class="move_to_left"
+            src="/johnwick/img/KakaoTalk_20230216_121812613.png"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <img class="footerlogo" src="/johnwick/img/footer-facebook.png" />
+      </div>
+      <div>
+        <img class="footerlogo" src="/johnwick/img/footer-youtube.png" />
+      </div>
+      <div>
+        <img class="footerlogo" src="/johnwick/img/footer-twitter.png" />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>글꼴</title>
+    <style>
+      /* 임포트 방식도 있지만 링크,다운로드가 제일 선호됨 */
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+      @font-face {
+        font-family: "noto";
+        src: ("./font/Noto_Sans_KR(1)/NOteSansKR-Regular.otf")
+          format("opentype");
+      }
+
+      /* 
+        font-family
+            웹 사이트 제작 시 기본 폰트는 굉장히 부자연스러움
+            https://fonts.google.com/
+            https://hangeul.naver.com/
+        */
+
+      * {
+        font-family: "noto";
+      }
+    </style>
+  </head>
+  <body>
+    <p>안녕하세요 바꾼 폰트입니다.</p>
+    <p style="font-size: 48px">안녕하세요 바꾼 폰트입니다.</p>
+    <p style="font-weight: bold">안녕하세요 바꾼 폰트입니다.</p>
+    <p style="font-size: 48px; font-weight: 900">안녕하세요 바꾼 폰트입니다.</p>
+    <p style="font-weight: 100">안녕하세요 바꾼 폰트입니다.</p>
+    <!-- font-weight: 100~900 -->
+    <!-- 100- thin
+        400 - regular 
+        700 - bold
+        900 - extra bold-->
+  </body>
+</html>
